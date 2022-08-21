@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:practise/screens/home.dart';
-import 'package:practise/screens/result.dart';
+import 'package:practise/layout/login.dart';
+
+import 'layout/bmi_home.dart';
+import 'layout/todo/todo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +18,8 @@ class MyApp extends StatelessWidget {
         // home: Home(),
         initialRoute: '/',
         routes: {
-          '/': (context) => Home(),
-          // '/result': 
+          '/': (context) => TodoApp(),
+          // '/result':
         });
   }
 }
